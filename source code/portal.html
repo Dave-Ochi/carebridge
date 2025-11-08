@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Carebridge Training Institute</title>
+    <meta name="description" content="Access your student portal at Carebridge Training Institute. Manage your courses, grades, and academic resources online.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../assets/carebridge logo.jpg" type="image/jpg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../assets/carebridge logo.jpg" alt="Carebridge Training Institute Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="portal.html">Student Portal</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <a href="admissions.html" class="btn header-apply-btn">Apply Now</a>
+    </header>
+
+    <main>
+        <!--<section class="hero">
+            <div class="container">
+                <h1>Student Portal</h1>
+                <p>Access your courses, grades, and academic resources</p>
+            </div>
+        </section>-->
+
+        <section class="portal-content">
+            <div class="container">
+                <div class="portal-login">
+                    <h2>Student Login</h2>
+                    <form id="login-form">
+                        <label for="student-id">Student ID:</label>
+                        <input type="text" id="student-id" name="student-id" required placeholder="Enter your student ID">
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+                        <div class="form-options">
+                            <label>
+                                <input type="checkbox" name="remember"> Remember me
+                            </label>
+                            <a href="#" class="forgot-password">Forgot password?</a>
+                        </div>
+
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+
+                    <div class="login-help">
+                        <p>New student? <a href="admissions.html">Complete your enrollment</a></p>
+                        <p>Need help? <a href="contact.html">Contact support</a></p>
+                    </div>
+                </div>
+
+                <div class="portal-features">
+                    <h2>Portal Features</h2>
+                    <p class="features-intro">Discover the comprehensive tools and resources available in your student portal to support your academic journey.</p>
+                    <div class="features-grid">
+                        <div class="portal-feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Course Management</h3>
+                                <p>Access course materials, assignments, and schedules. Track your progress and submit work online.</p>
+                            </div>
+                            <div class="feature-action">
+                                <span class="feature-badge">Essential</span>
+                            </div>
+                        </div>
+                        <div class="portal-feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Grade Book</h3>
+                                <p>View your grades, GPA, and academic performance. Monitor your progress throughout the semester.</p>
+                            </div>
+                            <div class="feature-action">
+                                <span class="feature-badge">Academic</span>
+                            </div>
+                        </div>
+                        <div class="portal-feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Financial Information</h3>
+                                <p>Check tuition balances, payment history, and financial aid status. Make secure online payments.</p>
+                            </div>
+                            <div class="feature-action">
+                                <span class="feature-badge">Finance</span>
+                            </div>
+                        </div>
+                        <div class="portal-feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Academic Resources</h3>
+                                <p>Access library resources, study guides, and additional learning materials.</p>
+                            </div>
+                            <div class="feature-action">
+                                <span class="feature-badge">Resources</span>
+                            </div>
+                        </div>
+                        <div class="portal-feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Communication</h3>
+                                <p>Send messages to instructors, view announcements, and participate in class discussions.</p>
+                            </div>
+                            <div class="feature-action">
+                                <span class="feature-badge">Social</span>
+                            </div>
+                        </div>
+                        <div class="portal-feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-cog"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Student Services</h3>
+                                <p>Register for classes, update personal information, and access student support services.</p>
+                            </div>
+                            <div class="feature-action">
+                                <span class="feature-badge">Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portal-resources">
+                    <h2>Quick Resources</h2>
+                    <div class="resources-grid">
+                        <div class="resource">
+                            <h3>Academic Calendar</h3>
+                            <p>View important dates, deadlines, and academic events.</p>
+                            <a href="#" class="btn">View Calendar</a>
+                        </div>
+                        <div class="resource">
+                            <h3>Library Access</h3>
+                            <p>Access online library resources and research materials.</p>
+                            <a href="#" class="btn">Visit Library</a>
+                        </div>
+                        <div class="resource">
+                            <h3>IT Support</h3>
+                            <p>Get help with technical issues and software support.</p>
+                            <a href="#" class="btn">Get Support</a>
+                        </div>
+                        <div class="resource">
+                            <h3>Career Services</h3>
+                            <p>Access resume building, job search, and career counseling.</p>
+                            <a href="#" class="btn">Career Resources</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portal-announcements">
+                    <h2>Latest Announcements</h2>
+                    <div class="announcements-list">
+                        <div class="announcement">
+                            <h3>Final Exam Schedule Posted</h3>
+                            <p>The final examination schedule for the current semester has been posted. Please check your student portal for details.</p>
+                            <p class="announcement-date">Posted: December 1, 2023</p>
+                        </div>
+                        <div class="announcement">
+                            <h3>Winter Break Notice</h3>
+                            <p>Classes will resume on January 8, 2024. Make sure to complete all assignments before the break.</p>
+                            <p class="announcement-date">Posted: November 25, 2023</p>
+                        </div>
+                        <div class="announcement">
+                            <h3>New Online Learning Platform</h3>
+                            <p>We have upgraded our online learning platform. All students should log in to familiarize themselves with the new features.</p>
+                            <p class="announcement-date">Posted: November 15, 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portal-support">
+                    <h2>Need Help?</h2>
+                    <p>Our student support team is here to assist you with any questions or issues you may have.</p>
+                    <div class="support-options">
+                        <div class="support-item">
+                            <h3>Technical Support</h3>
+                            <p>Having trouble accessing the portal or with technical issues?</p>
+                            <p>Email: techsupport@carebridge.co.ke</p>
+                            <p>Phone: +254 748 707 070</p>
+                        </div>
+                        <div class="support-item">
+                            <h3>Academic Advising</h3>
+                            <p>Need help with course selection or academic planning?</p>
+                            <p>Email: advising@carebridge.co.ke</p>
+                            <p>Phone: +254 748 707 070</p>
+                        </div>
+                        <div class="support-item">
+                            <h3>Financial Aid</h3>
+                            <p>Questions about tuition, payments, or financial aid?</p>
+                            <p>Email: finaid@carebridge.co.ke</p>
+                            <p>Phone: +254 748 707 070</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+       <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Carebridge Training Institute</h3>
+                    <p>Leading vocational training institute in Nairobi, Kenya. Transforming careers through practical education in healthcare, IT, and business.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="portal.html">Student Portal</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Details</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Carebridge Training Institute<br>
+                            123 Education Street<br>
+                            Nairobi, Kenya</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+254 748 707 070</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@carebridge.co.ke</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 8AM-6PM<br>Sat: 9AM-2PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="programs.html#healthcare">Healthcare Training</a></li>
+                        <li><a href="programs.html#it">Information Technology</a></li>
+                        <li><a href="programs.html#business">Business Administration</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Carebridge Training Institute. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
