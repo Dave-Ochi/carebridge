@@ -14,6 +14,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.3px;
+    padding-top: 120px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -255,6 +256,7 @@ nav ul li a:hover {
 /* Main content */
 main {
     margin-top: 0;
+    min-height: calc(100vh - 240px);
 }
 
 section {
@@ -3291,6 +3293,57 @@ footer::before {
     width: 100%;
 }
 
+/* Added css for better small phone support */
+@media (max-width: 480px) {
+    /* Header adjustments for smaller screens */
+    header {
+        padding: 10px 0;
+    }
+
+    .logo img {
+        height: 60px; 
+        width: auto; 
+    }
+    
+    nav ul li a {
+        font-size: 1em; 
+        padding: 16px 20px;
+    }
+    
+    .header-apply-btn {
+        font-size: 1em; 
+        padding: 12px 20px; 
+    }
+
+    body {
+        padding-top: 90px;
+    }
+
+    main {
+        min-height: calc(100vh - 180px); 
+        padding-bottom: 10px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Footer adjustments for small screens */
+    .footer-links a {
+        font-size: 1em; 
+        padding: 16px 0;
+        min-height: 48px;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.5em;
+    }
+    
+    .contact-item {
+        padding: 20px;
+    }
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     header .container {
@@ -3298,8 +3351,21 @@ footer::before {
         padding: 10px;
     }
 
+    body {
+        padding-top: 100px;
+    }
+
+    main {
+        min-height: calc(100vh - 200px);
+        padding-bottom: 20px;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+
     nav {
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     nav ul {
@@ -3316,8 +3382,8 @@ footer::before {
     }
 
     .header-apply-btn {
-        position: static;
-        margin-top: 10px;
+        position: sticky;
+        top: 0;
         width: 100%;
         text-align: center;
         font-size: 0.9em;
